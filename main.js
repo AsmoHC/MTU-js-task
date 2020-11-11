@@ -1,23 +1,31 @@
-function startTimer(duration, display) {
-    var timer = duration,
-        minutes, seconds;
-    setInterval(function() {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+// timer countdown
+var cdtime;
+var minutes = 1;
+var seconds = 00;
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
+function countdown(element) {
+    cdtime = setInterval(function() {
+        var timer = document.getElementById(element);
+        if (seconds == 0) {
+            if (minutes == 0) {
+                alert(timer.innerHTML = "game over");
+                clearInterval(cdtime);
+                return;
+            } else {
+                minutes--;
+                seconds = 60;
+            }
         }
+
+        var secondstxt;
+        if (seconds > 1) {
+            secondstxt = 'seconds';
+        } else {
+            secondstxt = 'second';
+        }
+
+
+        timer.innerHTML = seconds + ' ' + secondstxt;
+        seconds--;
     }, 1000);
 }
-
-window.onload = function() {
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};

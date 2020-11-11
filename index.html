@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="header padding-site">
         <h1>Page title</h1>
-        <div>Registration closes in <span id="time">05:00</span> minutes!</div>
+
+        <!-- <div id="initialtime"></div> -->
+        <input type="button" onclick="countdown('countdown');" value="Start" />
+        <div id='countdown' class="countdown-timer"></div>
 
 
 
