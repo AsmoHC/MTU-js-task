@@ -2,14 +2,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.padding-site {
-    padding-left: 58px;
-    padding-right: 58px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.header {
+.padding-site {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header {
     background-color: #c6c6c6;
-    height: 150px;
+    height: 175px;
     position: relative;
 }
 
@@ -17,33 +22,16 @@ body {
     background-color: brown;
 }
 
-.footer {
+footer {
     background-color: cadetblue;
 }
 
-.button {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #212121;
-    letter-spacing: 3.6px;
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
-    border-radius: 23px;
-    background-color: #ffffff;
-    text-decoration: none;
-    width: 172px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    display: inline-block;
+.logo {
+    height: 85px;
+    width: 85px;
 }
 
-.button:hover {
-    background-color: #212121;
-    color: #ffffff;
-}
-
+.button,
 .countdown-timer {
     font-size: 18px;
     font-weight: 700;
@@ -55,9 +43,14 @@ body {
     border-radius: 23px;
     background-color: #ffffff;
     text-decoration: none;
-    width: 172px;
+    width: 100%;
     height: 45px;
     line-height: 45px;
     text-align: center;
     display: inline-block;
+}
+
+.button:hover {
+    background-color: #212121;
+    color: #ffffff;
 }

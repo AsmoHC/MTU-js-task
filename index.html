@@ -7,48 +7,44 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="header padding-site">
-        <h1>Page title</h1>
-
-        <!-- <div id="initialtime"></div> -->
-        <input type="button" onclick="countdown('countdown');" value="Start" />
-        <div id='countdown' class="countdown-timer"></div>
-
-
-
-
-
-        <!-- <form class="form">
-            <input type="number" min="1" class="time-input" placeholder="Enter Countdown">
-            <select name="format">
-                <option value="hours">Hours</option>
-                <option value="minutes">Minutes</option>
-                <option value="seconds">Seconds</option>
-            </select>
-            <button type="submit" class="set-btn">SET</button>
-        </form>
-        <p class="countdown">00 : 00 : 00</p>
-
-        <div class="buttons">
-            <button class="stop-btn">STOP</button>
-            <button class="reset-btn">RESET</button>
-        </div> -->
-
-        <!-- <button class="button button-start">Start</button>
-        <button type="reset" class="button">Reset</button> -->
+    <header class="padding-site">
+        <div class="row">
+            <div class="col-11">
+                <h1><img src="img/box.svg" alt="blocks" class="logo">Blocks-to-win</h1>
+            </div>
+            <div class="col-1">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"><input type="button" onclick="countdown('countdown');" value="Start" class="button" /></div>
+            <div class="col-3">*reset btn*</div>
+            <div class="col-3">*points*</div>
+            <div class="col-3">
+                <div id='countdown' class="countdown-timer"></div>
+            </div>
+        </div>
 
 
+    </header>
+    <div class="container ">
+        <h1>321</h1>
     </div>
-    <div class="container">
-        <h1>w</h1>
-    </div>
-    <div class="footer">
-        <h1>123</h1>
-    </div>
-    <script src="main.js"></script>
+
+    <footer class="footer mt-auto py-3">
+        <span class="text-muted">*footer text*</span>
+    </footer>
+    <script src="main.js "></script>
+    <!-- Подключаем jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Подключаем плагин Popper (необходим для работы компонента Dropdown и др.) -->
+    <script src="js/popper.min.js "></script>
+    <!-- Подключаем Bootstrap JS -->
+    <script src="js/bootstrap.min.js "></script>
 </body>
 
 </html>
