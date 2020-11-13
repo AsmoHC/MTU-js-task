@@ -18,12 +18,13 @@ header {
     position: relative;
 }
 
-.container {
+.content {
     background-color: brown;
 }
 
 footer {
     background-color: cadetblue;
+    text-align: center;
 }
 
 .logo {
@@ -43,7 +44,7 @@ footer {
     border-radius: 23px;
     background-color: #ffffff;
     text-decoration: none;
-    width: 100%;
+    width: 75%;
     height: 45px;
     line-height: 45px;
     text-align: center;
@@ -53,4 +54,18 @@ footer {
 .button:hover {
     background-color: #212121;
     color: #ffffff;
+}
+
+.game-field {
+    height: 500px;
+    background-color: red;
+    border: 1px solid #000;
+    border-radius: 23px;
+}
+
+.leaderboard {
+    height: 500px;
+    background-color: lightblue;
+    border: 1px solid #000;
+    border-radius: 23px;
 }

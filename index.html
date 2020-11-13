@@ -13,30 +13,40 @@
 <body>
     <header class="padding-site">
         <div class="row">
-            <div class="col-11">
-                <h1><img src="img/box.svg" alt="blocks" class="logo">Blocks-to-win</h1>
+            <div class="col-10">
+                <h1><img src="img/box.svg" alt="blocks" class="logo"> Blocks-to-win</h1>
             </div>
-            <div class="col-1">
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div class="col-2">
+                <p>Rules: When you click 'Start' button...</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3"><input type="button" onclick="countdown('countdown');" value="Start" class="button" /></div>
-            <div class="col-3">*reset btn*</div>
+            <div class="col-3">
+                <input type="button" onclick="countdown('countdown');" value="Start" class="button" /></div>
+            <div class="col-3">*reset*</div>
             <div class="col-3">*points*</div>
             <div class="col-3">
                 <div id='countdown' class="countdown-timer"></div>
             </div>
         </div>
-
-
     </header>
-    <div class="container ">
-        <h1>321</h1>
+
+    <div class="content padding-site">
+        <div class="row">
+            <div class="col-9 game-field">///
+            </div>
+            <div class="col-3 leaderboard">
+                <ul class="leaderboard-list">
+                    <h1>leaderboard</h1>
+                    <li>123</li>
+                    <li>123</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <footer class="footer mt-auto py-3">
-        <span class="text-muted">*footer text*</span>
+        <span class="text-muted"> &COPY;Valeriy Sernetskiy. E-mail: parasmod7852@gmail.com</span>
     </footer>
     <script src="main.js "></script>
     <!-- Подключаем jQuery -->
