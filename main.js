@@ -62,6 +62,21 @@ function countdown(element) {
 
 // animation blocks appear
 
-$('.new-div:eq(0)').fadeIn(300, function() {
-    $(this).next().fadeIn(300, arguments.callee);
+// $('.new-div:eq(0)').fadeIn(300, function() {
+//     $(this).next().fadeIn(300, arguments.callee);
+// });
+
+$.fn.shuffle = function() {
+    var m = this.length,
+        t, i;
+    while (m) {
+        i = Math.floor(Math.random() * m--);
+        t = this[m];
+        this[m] = this[i];
+        this[i] = t;
+    }
+    return this;
+};
+$('.new-div').shuffle().each(function(n) {
+    $(this).delay(n * 900).fadeTo(1500, 1);
 });
