@@ -25,7 +25,12 @@
             <div class="col-3">
                 <input type="button" onclick="countdown('countdown');" value="Start" class="button" /></div>
             <div class="col-3">*reset*</div>
-            <div class="col-3">*points*</div>
+            <div class="col-3">
+                <!-- <span class="points-number"></span> -->
+
+                <button class="heart" type="button"><span class="likes-number"></span></button>
+
+            </div>
             <div class="col-3">
                 <div id='countdown' class="countdown-timer"></div>
             </div>
@@ -59,6 +64,7 @@
         <span class="text-muted"> &COPY;Valeriy Sernetskiy. E-mail: parasmod7852@gmail.com</span>
     </footer>
 
+    <script src="blocks.js"></script>
     <script src="main.js "></script>
     <!-- Подключаем плагин Popper (необходим для работы компонента Dropdown и др.) -->
     <script src="js/popper.min.js "></script>
