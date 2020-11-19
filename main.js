@@ -1,3 +1,4 @@
+"use strict";
 // timer countdown
 var cdtime;
 var minutes = 1;
@@ -25,7 +26,7 @@ function countdown(element) {
         timer.innerHTML = seconds + ' ' + secondstxt;
         seconds--;
     }, 1000);
-}
+};
 
 // animation random blocks appear
 $.fn.shuffle = function() {
@@ -43,24 +44,13 @@ $('.new-div').shuffle().each(function(n) {
     $(this).delay(n * 900).fadeTo(1500, 1);
 });
 
-//points
-// let cubeDiv = document.querySelector('.new-div');
-// let pointsNumber = document.querySelector('.points-number');
+
+// let heart = document.querySelector('.heart');
+// let likesNumber = document.querySelector('.likes-number');
 // let counter = 0;
 
-// cubeDiv.onclick = function() {
+// heart.onclick = function() {
 //     counter++;
-//     pointsNumber.textContent = counter;
-
-//     cubeDiv.classList.toggle('added');
+//     likesNumber.textContent = counter;
+//     heart.classList.toggle('added');
 // };
-
-let heart = document.querySelector('.heart');
-let likesNumber = document.querySelector('.likes-number');
-let counter = 0;
-
-heart.onclick = function() {
-    counter++;
-    likesNumber.textContent = counter;
-    heart.classList.toggle('added');
-};

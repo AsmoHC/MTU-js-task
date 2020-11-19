@@ -75,6 +75,7 @@ footer {
     width: 700px;
     background-color: #fff;
     margin: 0 auto;
+    position: relative;
 }
 
 .new-div {
@@ -82,5 +83,11 @@ footer {
     height: 100px;
     width: 100px;
     border: 1px solid #000;
-    float: left;
+    position: absolute;
+}
+
+.points-number {
+    height: 50px;
+    width: 75%;
+    background: #fff;
 }
