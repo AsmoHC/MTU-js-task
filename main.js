@@ -63,7 +63,7 @@ function animateCube(cube) {
 }
 
 function setTimer() {
-    var seconds = 7,
+    var seconds = 60,
         timerElement = document.getElementById('timer');
 
     timer = setInterval(function() {
