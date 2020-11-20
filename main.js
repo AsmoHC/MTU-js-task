@@ -103,3 +103,12 @@ function startGame() {
     addCubes();
     setTimer();
 }
+
+function resetGame() {
+    clearGameField();
+    score = 0;
+    scoreElement.innerHTML = 'Score: 0';
+    clearInterval(timer);
+    startGame();
+    return;
+};

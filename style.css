@@ -13,17 +13,17 @@ body {
 }
 
 header {
-    background-color: #c6c6c6;
+    background-color: #93bdbd;
     height: 175px;
     position: relative;
 }
 
 .content {
-    background-color: brown;
+    background-color: #212121;
 }
 
 footer {
-    background-color: cadetblue;
+    background-color: #93bdbd;
     text-align: center;
 }
 
@@ -33,7 +33,8 @@ footer {
 }
 
 .button,
-.countdown-timer {
+.countdown-timer,
+#score {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -58,14 +59,14 @@ footer {
 
 .game-field-border {
     height: 500px;
-    background-color: red;
-    border: 1px solid #000;
+    background-color: #e9f1f1;
+    border: 0px solid #000;
     border-radius: 23px;
 }
 
 .leaderboard {
     height: 500px;
-    background-color: lightblue;
+    background-color: #bd9393;
     border: 1px solid #000;
     border-radius: 23px;
 }
@@ -85,10 +86,4 @@ footer {
     width: 100px;
     border: 1px solid #000;
     position: absolute;
-}
-
-.points-number {
-    height: 50px;
-    width: 75%;
-    background: #fff;
 }

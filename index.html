@@ -14,18 +14,20 @@
 <body>
     <header class="padding-site">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
                 <h1><img src="img/box.svg" alt="blocks" class="logo"> Blocks-to-win</h1>
             </div>
-            <div class="col-2">
-                <p>Rules: When you click 'Start' button...</p>
+            <div class="col-3">
+                <p>Click the 'Start' button to start playing. Clicking on a block gives you one point. You have one minute. Good luck!</p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
                 <button onclick="startGame()" class="button start-button" id="start-button">Start</button>
             </div>
-            <div class="col-3">*reset*</div>
+            <div class="col-3">
+                <button onclick="resetGame()" class="button" id="reset-button">Reset</button>
+            </div>
             <div class="col-3" id="score">Score: 0</div>
             <div class="col-3">
                 <div id='timer' class="countdown-timer">60</div>
