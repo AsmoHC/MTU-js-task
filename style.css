@@ -20,6 +20,7 @@ header {
 
 .content {
     background-color: #212121;
+    height: 500px;
 }
 
 footer {
@@ -30,6 +31,21 @@ footer {
 .logo {
     height: 85px;
     width: 85px;
+}
+
+.rules-link {
+    color: #212121;
+    font-size: 34px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    float: right;
+}
+
+.rules-link:hover {
+    color: #000;
+    border-bottom: 3px solid #212121;
 }
 
 h1 {
@@ -46,6 +62,20 @@ h1 {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+}
+
+.rules-field {
+    height: 500px;
+    background-color: #e9f1f1;
+    border: 0px solid #000;
+    border-radius: 23px;
+}
+
+.rules-list {
+    color: #212121;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .button,
