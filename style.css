@@ -32,9 +32,27 @@ footer {
     width: 85px;
 }
 
+h1 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+.rules {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 .button,
 .countdown-timer,
 #score {
+    color: #212121;
+    color: #6c6c6c;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -45,7 +63,7 @@ footer {
     border-radius: 23px;
     background-color: #ffffff;
     text-decoration: none;
-    width: 75%;
+    width: 85%;
     height: 45px;
     line-height: 45px;
     text-align: center;
@@ -71,6 +89,27 @@ footer {
     border-radius: 23px;
 }
 
+.leaderboard h2 {
+    color: #212121;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 72px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.leaderboard-list {
+    list-style-image: url(img/award.svg);
+    text-align: center;
+}
+
+.leaderboard-list li {
+    color: #212121;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
 .game-field {
     height: 500px;
     width: 700px;
@@ -86,4 +125,12 @@ footer {
     width: 100px;
     border: 1px solid #000;
     position: absolute;
+}
+
+.cube:hover {
+    outline: 1px solid black;
+}
+
+.name {
+    display: none;
 }

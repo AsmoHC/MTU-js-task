@@ -74,7 +74,7 @@ function setTimer() {
             // to see 0 in the timer before the alert shows
             setTimeout(function() {
                 clearInterval(timer);
-                alert('Game Over!');
+                playerName("Game over!");
                 addRecordToALeaderboard(score);
                 score = 0;
                 scoreElement.innerHTML = 'Score: 0';
@@ -87,9 +87,24 @@ function setTimer() {
 
 }
 
+function playerName() {
+    var name,
+        person = prompt("Game over! Please enter your name:", 'Gandalf Potter');
+    if (person == null) {
+        name = "Anonymous";
+    } else {
+        name = person;
+    }
+    document.getElementById("playerNickname").innerHTML = name;
+
+}
+
+
 function addRecordToALeaderboard(score) {
-    var scoreItem = document.createElement('li');
-    scoreItem.innerHTML = score;
+    var scoreItem = document.createElement('li'),
+        scoreString = score.toString(),
+        nickName = document.getElementById('playerNickname').textContent;
+    scoreItem.innerHTML = nickName + ' ' + scoreString;
     leaderBoardElement.appendChild(scoreItem);
 }
 
