@@ -2,8 +2,11 @@ var startButton = document.getElementById('start-button'),
     gameField = document.getElementById('game-field'),
     scoreElement = document.getElementById('score'),
     score = 0,
-    leaderBoardElement = document.getElementById('leaderboard-list');
-timer;
+    leaderBoardElement = document.getElementById('leaderboard-list'),
+    timer,
+    resetButton = document.getElementById('reset-button');
+
+resetButton.disabled = true;
 
 function randomPosX(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -112,11 +115,11 @@ function clearGameField() {
     gameField.innerHTML = '';
 }
 
-
 function startGame() {
     startButton.disabled = true;
     addCubes();
     setTimer();
+    resetButton.disabled = false;
 }
 
 function resetGame() {
