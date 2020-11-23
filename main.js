@@ -90,7 +90,7 @@ function setTimer() {
 function playerName() {
     var name,
         person = prompt("Game over! Please enter your name:", 'Gandalf Potter');
-    if (person == null) {
+    if (person == null || person == '') {
         name = "Anonymous";
     } else {
         name = person;
